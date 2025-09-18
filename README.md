@@ -1,0 +1,2 @@
+# shellhacks
+resources &amp; others
