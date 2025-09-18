@@ -1,0 +1,15 @@
+{
+  "name": "codestation",
+  "module": "src/index.tsx",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@opentui/core": "^0.1.23"
+  }
+}
