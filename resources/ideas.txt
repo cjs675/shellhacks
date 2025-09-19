@@ -1,0 +1,17 @@
+- dev outpost 
+    - collab w devs w similar/vastly different skillsets  
+    - mentoring, networking
+    - ex. 
+        - frontend <== ==> backend dev 
+            - fullstack collab 
+        - experienced cloud dev <== ==> fullstack dev 
+            - deploy at scale
+    - can be anon 
+- homework buddy
+    - long context model
+    - chat with pdf's
+    - generate custom study plans 
+    - create reminders + notis? 
+        - email (mailchimp) 
+        - text (twilio) 
+- 
