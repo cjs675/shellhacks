@@ -7,10 +7,12 @@
     - at moment think it'd best fit msg inbox  
 
 - [windows95 inspired UI react components](https://github.com/react95-io)
+- [win95 UI kit](https://github.com/themesberg/windows-95-ui-kit) 
 
 - playing into retro/win95 theme
     - [posthog UI](https://posthog.com/questions/marking-an-event-verified)
         - good inspo
+
 ## backend 
 
 - supabase 
