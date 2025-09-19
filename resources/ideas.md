@@ -1,4 +1,4 @@
-- dev outpost 
+- __dev outpost__ 
     - collab w devs w similar/vastly different skillsets  
     - mentoring, networking
     - ex. 
@@ -8,7 +8,7 @@
             - deploy at scale
     - can be anon 
 
-- homework buddy
+- __homework buddy__
     - long context model
     - chat with pdf's
     - generate custom study plans 
@@ -16,7 +16,7 @@
         - email (mailchimp) 
         - text (twilio) 
 
-- tracking model (potential for gambling / phantom integration? lol)
+- __tracking model__ (potential for gambling / phantom integration? lol)
     - not too thought out
     - prediction model based on weather, historical data, region, season
     - applicable to planes, cargo ships, satellites (sats exempt from prediction models obv but could be cool)
@@ -26,7 +26,7 @@
         - SHIPS API https://www.marinetraffic.com/en/ais/home/centerx:-20.4/centery:29.4/zoom:3
         - MISCELLANEOUS https://apivault.dev/
 
-- events near me
+- __events near me__
     - conner gave this one to me
     - one stop shop for events/specials/live music etc... within a set range from user
     - modernized yelp basically, focus less on review side and more on updates

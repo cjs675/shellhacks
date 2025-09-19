@@ -12,6 +12,7 @@
 - playing into retro/win95 theme
     - [posthog UI](https://posthog.com/questions/marking-an-event-verified)
         - good inspo
+- [win95 inspired OS inside browser](https://mellobacon.github.io/mello_os/)
 
 ## backend 
 
