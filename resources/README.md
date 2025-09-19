@@ -6,6 +6,11 @@
     - would they be global feature? 
     - at moment think it'd best fit msg inbox  
 
+- [windows95 inspired UI react components](https://github.com/react95-io)
+
+- playing into retro/win95 theme
+    - [posthog UI](https://posthog.com/questions/marking-an-event-verified)
+        - good inspo
 ## backend 
 
 - supabase 
