@@ -1,4 +1,6 @@
-# to run
+# shadCN testing grounds 
+
+## to run
 
 ```bun run dev --open```
 - starts up bun server 
@@ -10,7 +12,7 @@
 - ```bun run db:push```
     - update DB schema  
 
-# sources 
+## sources 
 - since i mainly use svelte, i use a ported version of shadCN that works with SK 
 - [shadcn-svelte](https://www.shadcn-svelte.com/docs)
     - no "do or die" 

@@ -1,3 +1,6 @@
+# what this is 
+- interactive google search CLI client 
+
 ## to run 
 - make sure to have [UV](https://docs.astral.sh/uv/getting-started/installation/)
 - from within the __resources__ dir: 
