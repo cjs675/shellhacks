@@ -2,6 +2,8 @@
  import * as Command from "$lib/components/ui/command/index.js";
  import { onMount } from "svelte";
  import * as Resizable from "$lib/components/ui/resizable/index.js";
+ import { Separator } from "$lib/components/ui/separator/index.js";
+
  let open = $state(false);
  
  function handleKeydown(e: KeyboardEvent) {
@@ -11,6 +13,8 @@
   }
  }
 </script>
+<Separator />
+
  
 <Resizable.PaneGroup direction="vertical">
  <Resizable.Pane>One</Resizable.Pane>
