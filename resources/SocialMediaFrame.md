@@ -639,3 +639,68 @@ from .models import Post, Comment, Like
 admin.site.register(Post)
 admin.site.register(Comment)
 admin.site.register(Like)
+
+# Plan for Django Backend
+
+## 1. Project Setup
+- Initialize a new Django project and a `core` app.
+- Configure settings for the project (database, static files, etc.).
+- Set up a virtual environment and install necessary packages (`django`, `djangorestframework`, `django-cors-headers`, etc.).
+
+## 2. User Authentication
+- Create a `users` app to handle user-related logic.
+- Implement a custom User model by extending `AbstractUser` to add fields like bio, profile picture, etc.
+- Set up token-based authentication (e.g., JWT with `djangorestframework-simplejwt`).
+- Create API endpoints for:
+    - User registration (`/api/users/register/`)
+    - User login (`/api/users/login/`)
+    - User logout (`/api/users/logout/`)
+    - Token refresh (`/api/users/token/refresh/`)
+
+## 3. Core Social Media Features
+- Create a `posts` app for posts, comments, and likes.
+- **Models**:
+    - `Post`: `author` (ForeignKey to User), `content` (text), `image` (optional), `created_at`.
+    - `Comment`: `author` (ForeignKey to User), `post` (ForeignKey to Post), `content` (text), `created_at`.
+    - `Like`: `user` (ForeignKey to User), `post` (ForeignKey to Post).
+- **API Endpoints**:
+    - Posts:
+        - `POST /api/posts/`: Create a new post.
+        - `GET /api/posts/`: List all posts (for a public feed or based on following).
+        - `GET /api/posts/{id}/`: Retrieve a single post.
+        - `PUT/PATCH /api/posts/{id}/`: Update a post.
+        - `DELETE /api/posts/{id}/`: Delete a post.
+    - Comments:
+        - `POST /api/posts/{post_id}/comments/`: Add a comment to a post.
+        - `GET /api/posts/{post_id}/comments/`: List comments for a post.
+    - Likes:
+        - `POST /api/posts/{post_id}/like/`: Like or unlike a post.
+
+## 4. User Profile & Follow System
+- **Profile API**:
+    - `GET /api/users/{username}/`: Get a user's profile information.
+    - `PUT/PATCH /api/users/profile/`: Allow a user to update their own profile.
+- **Follow System**:
+    - Create a `Follow` model: `follower` (ForeignKey to User), `following` (ForeignKey to User).
+    - API Endpoints:
+        - `POST /api/users/{username}/follow/`: Follow or unfollow a user.
+        - `GET /api/users/{username}/followers/`: List a user's followers.
+        - `GET /api/users/{username}/following/`: List users a user is following.
+
+## 5. Feed Generation
+- Implement logic to generate a personalized feed for a user.
+- `GET /api/feed/`: An endpoint that returns a list of posts from users that the current user follows, ordered by `created_at` descending.
+
+## 6. Database
+- Use SQLite for initial development for simplicity.
+- Configure the project to use PostgreSQL for production for better scalability and reliability.
+
+## 7. Testing
+- Set up `pytest` and `pytest-django`.
+- Write unit tests for models and business logic.
+- Write integration tests for all API endpoints to ensure they behave as expected.
+
+## 8. Deployment
+- Create a `Dockerfile` and `docker-compose.yml` to containerize the application.
+- Write a deployment script or documentation for deploying to a cloud provider (e.g., Heroku, AWS, DigitalOcean).
+- Configure environment variables for sensitive information like `SECRET_KEY` and database credentials.

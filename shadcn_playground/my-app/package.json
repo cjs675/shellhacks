@@ -32,7 +32,7 @@
 		"@tailwindcss/vite": "^4.0.0",
 		"@types/node": "^20",
 		"@vitest/browser": "^3.2.3",
-		"bits-ui": "^2.8.6",
+		"bits-ui": "^2.11.0",
 		"clsx": "^2.1.1",
 		"drizzle-kit": "^0.30.2",
 		"drizzle-orm": "^0.40.0",
